@@ -15,7 +15,8 @@ dependencies = [
     "rapidocr>=3.8.1",
     "uvicorn>=0.46.0",
 ]
-
+[tool.uv]
+link-mode="copy"
 [build-system]
 requires = ["uv_build>=0.10.6,<0.11.0"]
 build-backend = "uv_build"
