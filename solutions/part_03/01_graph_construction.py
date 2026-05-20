@@ -28,7 +28,6 @@ from graph_rag_workshop.utils.part_03_graph_construction_utils import (
     visualize_graph,
 )
 
-
 # Define file paths and constants
 HERE = Path(__file__).resolve().parent
 DATA_DIR = HERE.parent.parent / "data"
@@ -107,7 +106,7 @@ INSTRUCTIONS = (
     "1. Parties: there are only two parties. Use the roles Organizer and "
     "Provider. Extract their company names from the agreement.\n"
     "2. Obligations: extract only the most important obligations for those "
-    "two roles. Keep at most 8 obligations total.\n\n"
+    "two roles.\n\n"
     "3. For each obligation, if present, include the related date. Confirm that the date is accurate.\n"
     "Return exactly this JSON shape:\n"
     "{\n"
@@ -131,7 +130,11 @@ extraction_agent = Agent(
     model=get_ollama_model(),
     output_type=ContractGraphExtraction,
     instructions=INSTRUCTIONS,
-    model_settings=ModelSettings(thinking="minimal", temperature=0.0, max_tokens=700),
+    model_settings=ModelSettings(
+        thinking="minimal",
+        temperature=0.0,
+        max_tokens=700,
+    ),
 )
 
 start = time.time()

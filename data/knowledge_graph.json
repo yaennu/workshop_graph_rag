@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "id": "party:Organizer",
+      "kind": "party",
+      "label": "Organizer",
+      "properties": {
+        "name": "Elven Ledger Council of Rivendell SA"
+      }
+    },
+    {
+      "id": "party:Provider",
+      "kind": "party",
+      "label": "Provider",
+      "properties": {
+        "name": "Shire Hospitality Cooperative GmbH"
+      }
+    },
+    {
+      "id": "obligation:Provide setup access at least 90 minutes before event start",
+      "kind": "obligation",
+      "label": "Provide setup access at least 90 minutes before event start",
+      "properties": {}
+    },
+    {
+      "id": "date:24 May 2026",
+      "kind": "date",
+      "label": "24 May 2026",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Confirm final headcount no later than 5 calendar days before event date",
+      "kind": "obligation",
+      "label": "Confirm final headcount no later than 5 calendar days before event date",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Provide dietary restrictions no later than 5 calendar days before event date",
+      "kind": "obligation",
+      "label": "Provide dietary restrictions no later than 5 calendar days before event date",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Deliver the services listed in Annex A in a professional manner",
+      "kind": "obligation",
+      "label": "Deliver the services listed in Annex A in a professional manner",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Bring materials required for service as listed in Annex A",
+      "kind": "obligation",
+      "label": "Bring materials required for service as listed in Annex A",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Deposit of 1,560 silver pieces due within 5 calendar days after signature date",
+      "kind": "obligation",
+      "label": "Deposit of 1,560 silver pieces due within 5 calendar days after signature date",
+      "properties": {}
+    },
+    {
+      "id": "date:02 May 2026",
+      "kind": "date",
+      "label": "02 May 2026",
+      "properties": {}
+    },
+    {
+      "id": "obligation:Balance of 2,340 silver pieces due within 10 calendar days after event date",
+      "kind": "obligation",
+      "label": "Balance of 2,340 silver pieces due within 10 calendar days after event date",
+      "properties": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Provide setup access at least 90 minutes before event start",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "4. Organizer Obligations \u2022 Provide setup access at least 90 minutes before event start."
+    },
+    {
+      "source": "obligation:Provide setup access at least 90 minutes before event start",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "4. Organizer Obligations \u2022 Provide setup access at least 90 minutes before event start."
+    },
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Confirm final headcount no later than 5 calendar days before event date",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "4. Organizer Obligations \u2022 Confirm final headcount no later than 5 calendar days before event date."
+    },
+    {
+      "source": "obligation:Confirm final headcount no later than 5 calendar days before event date",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "4. Organizer Obligations \u2022 Confirm final headcount no later than 5 calendar days before event date."
+    },
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Provide dietary restrictions no later than 5 calendar days before event date",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "4. Organizer Obligations \u2022 Provide dietary restrictions no later than 5 calendar days before event date."
+    },
+    {
+      "source": "obligation:Provide dietary restrictions no later than 5 calendar days before event date",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "4. Organizer Obligations \u2022 Provide dietary restrictions no later than 5 calendar days before event date."
+    },
+    {
+      "source": "party:Provider",
+      "relation": "must_do",
+      "target": "obligation:Deliver the services listed in Annex A in a professional manner",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "5. Provider Obligations \u2022 Deliver the services listed in Annex A in a professional manner."
+    },
+    {
+      "source": "obligation:Deliver the services listed in Annex A in a professional manner",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "5. Provider Obligations \u2022 Deliver the services listed in Annex A in a professional manner."
+    },
+    {
+      "source": "party:Provider",
+      "relation": "must_do",
+      "target": "obligation:Bring materials required for service as listed in Annex A",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "5. Provider Obligations \u2022 Bring materials required for service as listed in Annex A."
+    },
+    {
+      "source": "obligation:Bring materials required for service as listed in Annex A",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "5. Provider Obligations \u2022 Bring materials required for service as listed in Annex A."
+    },
+    {
+      "source": "party:Organizer",
+      "relation": "must_do",
+      "target": "obligation:Deposit of 1,560 silver pieces due within 5 calendar days after signature date",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "3. Fees and Payment \u2022 Deposit: 40% (1,560 silver pieces) due within 5 calendar days after signature date."
+    },
+    {
+      "source": "obligation:Deposit of 1,560 silver pieces due within 5 calendar days after signature date",
+      "relation": "due_by",
+      "target": "date:02 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "3. Fees and Payment \u2022 Deposit: 40% (1,560 silver pieces) due within 5 calendar days after signature date."
+    },
+    {
+      "source": "party:Provider",
+      "relation": "must_do",
+      "target": "obligation:Balance of 2,340 silver pieces due within 10 calendar days after event date",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "3. Fees and Payment \u2022 Balance: 60% (2,340 silver pieces) due within 10 calendar days after the event date."
+    },
+    {
+      "source": "obligation:Balance of 2,340 silver pieces due within 10 calendar days after event date",
+      "relation": "due_by",
+      "target": "date:24 May 2026",
+      "source_doc": "Service_Agreement.pdf and Annex_A_Scope_Sheet.pdf",
+      "evidence": "3. Fees and Payment \u2022 Balance: 60% (2,340 silver pieces) due within 10 calendar days after the event date."
+    }
+  ]
+}
